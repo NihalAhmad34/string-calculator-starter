@@ -65,6 +65,11 @@ class StringCalculatorShould {
     public void testOverThousand(){
     	assertEquals(2, Calculator.add("1000,2"));
     }
+	
+	 @Test
+    public void testOtherDelimiter(){
+    	assertEquals(3, Calculator.add("//;\n1;2"));
+    }
 
 
 }
